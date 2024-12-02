@@ -14,7 +14,7 @@ This exercise will help you learn and practice creating HTML forms with various 
 - `index.html`: This is where you'll write your code
 - `styles.css`: Pre-written styles for your form (don't modify)
 - `test/test.js`: Tests that will check your implementation
-- `solution.html`: Reference implementation (look at this only after completing the exercise)
+
 
 ## Tasks
 

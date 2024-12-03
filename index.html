@@ -15,95 +15,58 @@
         - action: "/submit"
         - method: "post"
         -->
-
-        <!-- 
-        Task 2: Create a text input for full name
-        Requirements:
-        - Use div with class "form-group"
-        - Add label with for="fullName"
-        - Input should have:
-          * id="fullName"
-          * name="fullName"
-          * required attribute
-        -->
-
-        <!-- 
-        Task 3: Create an email input
-        Requirements:
-        - Use div with class "form-group"
-        - Add label with for="email"
-        - Input should have:
-          * id="email"
-          * name="email"
-          * required attribute
-        -->
-
-        <!-- 
-        Task 4: Create a password input
-        Requirements:
-        - Use div with class "form-group"
-        - Add label with for="password"
-        - Input should have:
-          * id="password"
-          * name="password"
-          * required attribute
-        -->
-
-        <!-- 
-        Task 5: Create radio buttons for gender
-        Requirements:
-        - Use div with class "form-group"
-        - Add div with class "radio-group"
-        - Create two radio inputs:
-          1. Male option:
-             * id="male"
-             * name="gender"
-             * value="male"
-          2. Female option:
-             * id="female"
-             * name="gender"
-             * value="female"
-        - Each option needs a label with matching 'for' attribute
-        -->
-
-        <!-- 
-        Task 6: Create a checkbox for newsletter
-        Requirements:
-        - Use div with class "form-group"
-        - Add div with class "checkbox-group"
-        - Input should have:
-          * id="subscribe"
-          * name="subscribe"
-        - Add label with for="subscribe"
-        -->
-
-        <!-- 
-        Task 7: Create a select dropdown for courses
-        Requirements:
-        - Use div with class "form-group"
-        - Add label with for="course"
-        - Select should have:
-          * id="course"
-          * name="course"
-          * required attribute
-        - Add options for:
-          * Empty option with "Choose a course"
-          * "html"
-          * "css"
-          * "javascript"
-        -->
-
-        <!-- 
-        Task 8: Create a textarea for comments
-        Requirements:
-        - Use div with class "form-group"
-        - Add label with for="comments"
-        - Textarea should have:
-          * id="comments"
-          * name="comments"
-          * rows="4"
-        -->
-
+        <form id="studentForm" action="/submit" method="post">
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <div class="form-group">
+            <div class="radio-group">
+              <input type="radio" name="gender" id="male" value="male" >
+              <label for="male">male</label>
+              <input type="radio" name="gender" id="female" value="female">
+              <label for="female">female</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="checkbox-group">
+              <label for="subscribe">subscribe</label>
+              <input type="checkbox" name="subscribe" id="subscribe">  
+            </div> 
+          </div>
+          <div class="form-group">
+            <label for="course">Course</label>
+          <select name="course" id="course" required>
+            <option value="">Choose a course</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">Javascript</option>
+          </select>
+          </div>
+          <div class="form-group">
+            <label for="comments">
+              <textarea id="comments" name="comments" rows="4"></textarea>
+            </label>
+          </div>
+          <div class="form-group">
+            <label for="profilePic">Profile Picture</label>
+            <input type="file" name="profilePic" id="profilePic" accept="image/*">
+          </div>
+          <div class="button-group">
+            <button type="submit" value="submit">Submit</button>
+            <button type="reset" value="reset">Reset</button>
+          </div>
+        </form>
+      
+        
         <!-- 
         Task 9: Create a file input for profile picture
         Requirements:
